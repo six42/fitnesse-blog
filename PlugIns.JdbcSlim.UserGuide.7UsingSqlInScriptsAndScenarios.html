@@ -72,9 +72,19 @@ When just executing a single SQL statement (or when connection re-use is enabled
 		<td colspan="2">select * from TestData</td>
 	</tr>
 	<tr>
+		<td>check</td>
+		<td>getRowCount</td>
+		<td>&gt;0</td>
+	</tr>
+	<tr>
 		<td>show</td>
 		<td>getColumnValueByName</td>
 		<td>NAME</td>
+	</tr>
+	<tr>
+		<td>show</td>
+		<td>getRow</td>
+		<td>1</td>
 	</tr>
 	<tr>
 		<td>show</td>
@@ -87,6 +97,22 @@ When just executing a single SQL statement (or when connection re-use is enabled
 	<tr>
 		<td>$RSOne=</td>
 		<td colspan="2">resultSheet</td>
+	</tr>
+</table>
+<br/><table>
+	<tr>
+		<td>Script</td>
+		<td>SQLCommand</td>
+		<td>ScriptDefinition</td>
+	</tr>
+	<tr>
+		<td>run</td>
+		<td colspan="2">select * from TestData where id='-1'</td>
+	</tr>
+	<tr>
+		<td>check</td>
+		<td>getRowCount</td>
+		<td>0</td>
 	</tr>
 </table>
 <br/><h1>Using SQLCommand in a scenario</h1>
