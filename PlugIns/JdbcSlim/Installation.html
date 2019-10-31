@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>PlugIns.JdbcSlim.Installation</title>
+    <!--[if lt IE 9]>
+   <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   </script>
+  <![endif]-->
+  
+  <link rel="shortcut icon" type="image/png" href="../resources/images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="../resources/css/fitnesse_wiki.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/css/fitnesse_pages.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/wysiwyg/wysiwyg.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/fitnesse-bootstrap.css" />
+
+  <script src="../resources/javascript/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="../resources/javascript/fitnesse.js" type="text/javascript"></script>
+
+  <script src="../resources/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+  <script src="../resources/bootstrap/js/respond.js" type="text/javascript"></script>
+
+ </head>
+ <body class="wikiPage">
+
+  <nav class="navbar-fixed-top " role="navigation">
+   <div class="navbar navbar-default">
+   <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <ol class="nav navbar-nav"><li><a href="Installation.html">Installation</a></li></ol>
+    </div>
+
+    </nav><ol class="breadcrumb">
+ <li><a href="/PlugIns">PlugIns</a></li>
+ <li><a href="../JdbcSlim.html">JdbcSlim</a></li>
+ 
+</ol>
+
+  <header>
+      </header>
+  
+  <article>
+   <br/><br/><h2 id="DownloadthelatestJdbcSlimlibraryfromgithub.comsix42jdbcslim">Download the latest Jdbc Slim library from github.com/six42/jdbcslim</h2>
+<span class="meta">variable defined: JdbcSlimLib=jdbcslim*.jar</span>
+<br/><br/><h2 id="InstallationPath">Installation Path</h2>
+Adujust the below path if you installed at a different location<br/>This path is relative to the folder in which <span class="fitnesse">FitNesse</span> got started <br/><span class="meta">variable defined: LibInstallPath=${RootPath}/plugins/jdbcslim/</span>
+<br/><br/>The Jdbc Slim Library - always required<br/><span class="meta">classpath: ./plugins/jdbcslim/jdbcslim*.jar</span><br/><br/><h2 id="Furtherdependencies">Further dependencies</h2>
+This is required to support encryption. It can be downloaded from <a href="https://github.com/dbfit/dbfit/releases/tag/v3.2.0">https://github.com/dbfit/dbfit/releases/tag/v3.2.0</a><br/><span class="meta">classpath: ./plugins/jdbcslim/commons-codec-*.jar</span><br/><span class="meta">classpath: ./plugins/jdbcslim/dbfit-*.jar</span><br/><br/>See the <a href="../JdbcSlim/SuiteSetup.html">SuiteSetup</a> pages for driver specific setup. <br/>JDBC driver used for the samples. Not required if you use a different JDBC driver<br/>./plugins/jdbcslim/h2-*.jar - download from <a href="http://www.h2database.com/html/download.html">http://www.h2database.com/html/download.html</a><br/>./plugins/jdbcslim/csvjdbc-*.jar<br/><br/><h2 id="UserManualandTestSuite">User Manual  and Test Suite</h2>
+To access the user manual and run the examples copy all Jdbc Slim Fitnesse pages from github to FitNesseRoot\PlugIns<br/>Copy from github the folder plugins\jdbcslim\TestDB to plugins\jdbcslim\TestDB in your installation<br/><span class="meta">variable defined: TestDbPath=${LibInstallPath}TestDB/</span>
+<br/><br/>Execute the suite on <a href="../JdbcSlim/UserGuide.html">.PlugIns.JdbcSlim.UserGuide</a><br/><br/><br/><h2 id="Tobuildyourowntestpages">To build your own test pages</h2>
+1. include this page on the root page of your suite <br/>2. include the <a href="../JdbcSlim/SuiteSetup.html">SuiteSetup</a> page or a page with similar content in the setup of your suite  <br/><br/><div class="contents">
+	<b>Contents:</b>
+	<ul class="toc1">
+		<li>
+			<a href="../JdbcSlim/Installation/BuildInstructions.html" class="static">Build Instructions</a>
+			<ul class="toc2">
+				<li>
+					<a href="../JdbcSlim/Installation/BuildInstructions/AntBuild.html" class="static">Ant Build (decommission)</a>
+					<span class="pageHelp">: Warning: Ant is not the strategic build tool and new versions are not tested against it</span>
+				</li>
+				<li>
+					<a href="../JdbcSlim/Installation/BuildInstructions/MavenBuild.html" class="static">Maven Build (decommission)</a>
+					<span class="pageHelp">: Warning: Maven is not the strategic build tool and new versions are not tested against it</span>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<br/>
+
+
+
+    
+ </body>
+</html>

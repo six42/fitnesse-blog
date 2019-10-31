@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>PlugIns.JdbcSlim.Installation.BuildInstructions.AntBuild</title>
+    <!--[if lt IE 9]>
+   <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('footer');
+   </script>
+  <![endif]-->
+  
+  <link rel="shortcut icon" type="image/png" href="../../../resources/images/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="../../../resources/css/fitnesse_wiki.css" />
+  <link rel="stylesheet" type="text/css" href="../../../resources/css/fitnesse_pages.css" />
+  <link rel="stylesheet" type="text/css" href="../../../resources/wysiwyg/wysiwyg.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="../../../resources/bootstrap/css/fitnesse-bootstrap.css" />
+
+  <script src="../../../resources/javascript/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="../../../resources/javascript/fitnesse.js" type="text/javascript"></script>
+
+  <script src="../../../resources/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+  <script src="../../../resources/bootstrap/js/respond.js" type="text/javascript"></script>
+
+ </head>
+ <body class="wikiPage">
+
+  <nav class="navbar-fixed-top " role="navigation">
+   <div class="navbar navbar-default">
+   <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <ol class="breadcrumb">
+ <li><a href="/PlugIns">PlugIns</a></li>
+ <li><a href="../../../JdbcSlim.html">JdbcSlim</a></li>
+ <li><a href="../../../JdbcSlim/Installation.html">Installation</a></li>
+ <li><a href="../../../JdbcSlim/Installation/BuildInstructions.html">BuildInstructions</a></li>
+ <li>AntBuild <span class="tag">decommission</span></li>
+</ol>
+    </div>
+
+    </nav><ol class="breadcrumb">
+ <li><a href="/PlugIns">PlugIns</a></li>
+ <li><a href="../../../JdbcSlim.html">JdbcSlim</a></li>
+ <li><a href="../../../JdbcSlim/Installation.html">Installation</a></li>
+ <li><a href="../../../JdbcSlim/Installation/BuildInstructions.html">BuildInstructions</a></li>
+ <li>AntBuild <span class="tag">decommission</span></li>
+</ol>
+
+  <header>
+      <p class="lead"> Warning: Ant is not the strategic build tool and new versions are not tested against it </p>
+   </header>
+  
+  <article>
+   <h1 id="Build.Ant">Build.Ant</h1>
+<br/>Warning: Ant is not the strategic build tool and new versions are not tested against it<br/><br/><h3 id="Tobuildyourselfdothefollowing">To build JdbcSlim yourself do the following:</h3>
+<br/><p class="note">git clone <a href="https://github.com/six42/jdbcslim.git">https://github.com/six42/jdbcslim.git</a></p><br/><h5 id="placethefollowingfilesinthefolderpluginsjdbcslim">place the following files in the folder plugins/jdbcslim</h5>
+<br/><table>
+	<tr>
+		<td>fitnesse-standalone.jar</td>
+		<td><a href="http://fitnesse.org">http://fitnesse.org</a> (tested with version 20190716)</td>
+	</tr>
+	<tr>
+		<td>dbfit-core-3.2.0.jar</td>
+		<td><a href="http://dbfit.github.io/dbfit/">http://dbfit.github.io/dbfit/</a> (extract from zip)</td>
+	</tr>
+	<tr>
+		<td>commons-codec-1.10.jar</td>
+		<td><a href="http://dbfit.github.io/dbfit/">http://dbfit.github.io/dbfit/</a> (extract from zip)</td>
+	</tr>
+	<tr>
+		<td>h2-1.4.196.jar</td>
+		<td><a href="http://www.h2database.com/html/download.html">http://www.h2database.com/html/download.html</a></td>
+	</tr>
+</table>
+<br/><p class="note">ant jar</p><br/><p class="note">ant run</p><br/><h5 id="Startyourbrowseratlocalhost8080andexecutethesuite.Plugins.JdbcSlim.UserGuide">Start your browser at <a href="http://localhost:8080">http://localhost:8080</a> and execute the suite .Plugins.JdbcSlim.UserGuide</h5>
+<br/><br/><h5 id="oncealltestspassrun">once all tests pass run</h5>
+<br/><p class="note">ant build</p><br/><h5 id="tovalidatethattheacceptancetestpassfromthecommandline.">to validate that the acceptance test pass from the command line.</h5>
+<br/><h5 id="Incaseyouusedifferentversionsfromtheabovejarsyouhavetoupdatethepages">In case you use different versions from the above jars you have to update the pages:</h5>
+<a href="../../../JdbcSlim.html">.PlugIns.JdbcSlim</a>.Installation<br/><a href="../../../JdbcSlim/XxTestMoreDrivers/HtwoTest/ScenarioLibrary.html">.PlugIns.JdbcSlim.XxTestMoreDrivers.HtwoTest.ScenarioLibrary</a><br/><a href="../../../JdbcSlim/XxTestMoreDrivers/HtwoTest/SuiteSetUp.html">.PlugIns.JdbcSlim.XxTestMoreDrivers.HtwoTest.SuiteSetUp</a><br/><br/>
+
+
+
+    
+ </body>
+</html>
